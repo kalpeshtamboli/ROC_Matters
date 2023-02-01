@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Private_limited_Company/PLC.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.sub-dropdown').click(function(){
+          $(this).find('.sub-dropdown-content').slideToggle();
+        });
+      });
+    </script>
+    
+    <!--.Navigation Bar Code--> 
+
+    <!-- <nav
+    class="Nav_bar hidden lg:flex justify-between px-20 text-white py-5 items-center my-14 "
+    > -->
+   
+    <nav class="hidden lg:flex lg:justify-between lg:text-white lg:px-20 py-5 lg:items-center my-14 lg:text-lg">
+      <div class="Logo">
+        <img
+          src="/assets/1x/Logo.png"
+          alt="Company_Logo"
+          class="md:h-28 absolute top-7"
+        />
+      </div>
+    
+  
+      <ul class="flex space-x-12 px-20  ">
+        <li> <a href="/Index.html">Home</a></li>
+     
+        <div class="dropdown relative inline-block ">
+      
+       
+          <a href="#services" class="flex space-x-2 items-center">
+            
+            <p>
+              Services 
+            </p>
+
+            <span>
+              <svg  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+              
+            </span>
+
+          </a>
+       
+          
+     
+        <div class="dropdown-content px-5 space-y-2 py-2 text-black rounded-sm  w-60 z-1 bg-white ">
+          <div class="sub-dropdown">
+            <a href="#option1" class="flex space-x-2 items-center">
+              
+                 
+            <p>
+              Registration services 
+            </p>
+
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+              
+            </span>
+              
+              </a>
+            <div class="sub-dropdown-content bg-white w-48  rounded-sm ">
+              <a href="/Private_limited_Company/PLC..html">Private limited company</a>
+              <a href="/Limited_liability_Partnership/LPP.html">Limited liability partnership</a>
+              <a href="/One_Person_Company/OPC.html">One person company</a>
+              <a href="/Section_8_Company/SC.html">Section 8 company</a>
+              <a href="/GST_registration/GST_page.html">GST registration</a>
+            </div>
+          </div>
+  
+          <div class="sub-dropdown  ">
+              <a href="#option1" class="flex space-x-2 items-center">
+                
+                <p>
+                  Compliance services 
+                </p>
+    
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  
+                </span>
+                
+                
+
+
+
+              </a>
+              <div class="sub-dropdown-content bg-white w-60 px-5 rounded-sm">
+                <a href="/GST_Filling_page/GST_Filling_page.html">GST filing</a>
+                <a href="/Annual_Compliances_of_Company/ACOC_page.html">Annual compliance of Pvt Ltd Companies</a>
+                <a href="/Annual_Compliances_Of_LLP/ACO_LLP.html">Annual compliance of LLP</a>
+               
+              </div>
+            </div>
+        </div>
+      </div>
+      <li> <a href="/About_us/aboutUs.html">About Us</a></li>
+      <li> <a href="/Contact_us/contact_page.html">Contact Us</a></li>
+  </ul>
+    </nav>
+
+    <!--mobile view nav bar-->
+    <!-- <div class="mobile_nav lg:hidden">
+      <div class="md:hidden flex justify-between px-8 py-2 items-center">
+        <img src="/assets/1x/Asset 7.png" alt="" class="w-12" />
+        <button class="outline-none mobile-menu-button">
+          <svg
+            class="w-6 h-6 text-gray-500"
+            x-show="!showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active">
+            <a
+              href="index.html"
+              class="block text-sm px-2 py-4 text-white font-semibold"
+              >Home</a
+            >
+          </li>
+          <li class="flex items-center">
+            <a
+              href="#services"
+              class="block text-sm px-2 py-4 text-white transition duration-300"
+              >Services</a
+            >
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                /></svg
+            ></span>
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="block text-sm px-2 py-4 text-white transition duration-300"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block text-sm px-2 py-4 text-white transition duration-300"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script> -->
+
+    <main class="px-12 mt-24 lg:flex lg:justify-around lg:px-10 lg:mt-40">
+      <div class="PLC_info lg:mt-16 ">
+        <h1 class=" PLC_title text-3xl w-70 font-bold   lg:text-4xl lg:w-2/3 leading-10  tracking-lg">
+          PRIVATE LIMITED
+
+          <span class="underline decoration-yellow-500 decoration-8"
+            >COMPANY</span
+          >
+        </h1>
+
+        <ul class="">
+          <div class=" flex items-center gap-6 mt-10">
+            <img src="/assets/1x/Asset 20.png" alt="" />
+            <li class="point text-xl lg:text-2xl">World Wide Authentication</li>
+          </div>
+          <div class=" flex items-center gap-6 mt-8">
+            <img src="/assets/1x/Asset 20.png" alt="" />
+            <li class="point text-xl lg:text-2xl">Small Contribution Towards (GDP)</li>
+          </div>
+
+          <div class=" flex items-center gap-6 mt-8">
+            <img src="/assets/1x/Asset 20.png" alt="" />
+            <li class="point text-xl lg:text-2xl">Creating Employement</li>
+          </div>
+        </ul>
+      </div>
+      <div class="PLC_Img">
+        <img src="/assets/1x/Asset 40.png" alt="" class=" mt-12 " />
+      </div>
+    </main>
+
+    
+    <section class="">
+      <h1 class=" h1 text-center text-2xl lg:text-5xl font-semibold mt-14">
+        Our Registration Package Includes
+      </h1>
+
+      <div class="package1  lg:flex lg:justify-evenly mt-10">
+        <img src="/assets/1x/Asset 21.png" alt="" class="mx-auto" />
+        <div class="h-28 w-1 lg:bg-gray-400"></div>
+        <img src="/assets/1x/Asset 22.png" alt="" class="mx-auto -my-10 lg:-my-0" />
+        <div class="h-28 w-1 lg:bg-gray-400"></div>
+        <img src="/assets/1x/Asset 23.png" alt="" class="mx-auto " />
+        <div class="h-28 w-1 lg:bg-gray-400"></div>
+        <img src="/assets/1x/Asset 24.png" alt="" class="mx-auto -my-10 lg:-my-0" />
+      </div>
+
+      <h1 class="h11 font-bold text-center text-2xl lg:text-5xl font-semibold mt-20 lg:mt-16">
+        private limited company
+      </h1>
+
+      <p class="text-center px-3 lg:px-0 t text-lg lg:text-xl mt-12">
+        Incorporation of private limited company is Best form of company
+        registrations.
+      </p>
+
+      <p class="text-center mx-auto text-lg lg:text-xl mt-5 px-5 lg:px-0 lg:w-8/12 leading-8">
+        Are you up for registering a private limited company? And do you think
+        registering a company is a tough job and requires technical skills? Then
+        let us back you up because with us its no hustle but a simple
+        process.Registering private limited company is offered by professional
+        at ROC Matters Now. Thousands of Business Owners have registered their
+        venture with us and our clientele is still growing. Good news is we are
+        a click away!!
+      </p>
+
+      <p class="text-center text-lg lg:text-xl mt-5 px-5 lg:px-0 lg:w-8/12 mx-auto leading-8">
+        To register a Pvt Ltd company, a minimum of two shareholders and two
+        directors are required. Registering a private limited is very easy with
+        ROC Matters - India's fast growing Company Registration service.It is a
+        registered corporate structure, prerequisites for the Incorporation of a
+        private limited company.
+      </p>
+      <p class="text-center text-lg lg:text-xl mt-5 px-5 lg:px-0 lg:w-8/12 mx-auto leading-8">
+        The Ministry Of Corporate Affairs provides the plateform for pre and
+        post registration of a company affairs of a company. Private companies
+        are one of the most chosen legal stuctures for an entity.
+      </p>
+    </section>
+
+    <div class="steps mt-16">
+      <h1 class="text-center font-bold text-2xl px-3 lg:px-0 lg:text-5xl">
+        Steps to Register a private limited company
+      </h1>
+      <div class="steps-images mt-5 lg:mt-0">
+        <img src="/assets/1x/Asset 101.png" alt="" class="px-2 lg:mx-auto" />
+      </div>
+    </div>
+
+    <!--Benefits-->
+    <!-- <div class="Benefits px-2 lg:px-0">
+      <h1 class="text-center text-2xl font-semibold lg:text-5xl">Benefits</h1>
+     <div class="lg:ml-60    font-medium mt-20">
+      <ul>
+        <div class="1 flex_logo_desc  flex   gap-5 text-center lg:items-center lg:gap-8 ">
+          <img src="/assets/1x/Asset 26.png" alt="" class="w-5 lg:w-8" />
+
+          <li class="text-font text-lg  lg:text-3xl">Liability is Limited</li>
+        </div>
+
+        <div class="2 flex_logo_desc flex  gap-5  lg:text-center items-center lg:gap-8 ">
+          <img src="/assets/1x/Asset 26.png" alt="" class="w-5 lg:w-8" />
+
+          <li class="text-font text-lg lg:text-3xl">Costs of setting up are not high</li>
+        </div>
+
+        <div class="3 flex_logo_desc flex   gap-5  lg:text-center items-center lg:gap-8 ">
+          <img src="/assets/1x/Asset 26.png" alt="" class="w-5 lg:w-8" />
+
+          <li class="text-font text-lg lg:text-3xl">Scalable form of Business Organization</li>
+        </div>
+
+        <div class="4 flex_logo_desc flex     lg:text-center items-center lg:gap-8 ">
+          <img src="/assets/1x/Asset 26.png" alt="" class="w-5 lg:w-8 -mt-14  lg:-mt-10" />
+
+          <li class="text-font text-lg  lg:px-0 lg:text-3xl px-3 lg:px-0  ">
+            Payment Gateways and few others require
+            the business to be a company
+          </li>
+        </div>
+
+        <div class="5 flex_logo_desc flex   text-center items-center lg:gap-8  ">
+          <img src="/assets/1x/Asset 26.png" alt="" class="w-5 lg:w-8 -mt-14  lg:-mt-10" />
+
+          <li class="text-font text-lg lg:text-3xl px-3 lg:px-0  lg:w-3/5  ">
+            Investors are willing to fund on companies
+            because  shares are relatively easy to
+            transfer & trade
+          </li>
+        </div>
+
+        <div class="6 flex_logo_desc flex text-center items-center lg:gap-8  ">
+          <img src="/assets/1x/Asset 26.png" alt="" class="w-5 lg:w-8 -mt-14  lg:-mt-10" />
+
+          <li class="text-font   text-lg lg:text-3xl lg:w-3/5">
+            People may come and people may go,
+            but <span> the company goes on forever.
+            it outlasts the founders! </span>
+          </li>
+        </div>
+      </ul>
+     </div>
+ 
+ 
+ 
+    </div> -->
+
+
+    <div class="space-y-4 lg:px-40 py-10">
+      <h1 class="text-center text-2xl font-semibold lg:text-5xl">Benefits</h1>
+
+      <div class="">
+        <ul class="space-y-4">
+          <li class="flex space-x-4">
+            <div>
+              <img src="/assets/1x/Asset 26.png" alt="" class="w-6" />
+            </div>
+            <div class="text-font text-lg  lg:text-3xl">
+              Liability is Limited
+            </div>
+          </li>
+          <li class="flex space-x-4">
+            <div>
+              <img src="/assets/1x/Asset 26.png" alt="" class="w-6" />
+            </div>
+            <div class="text-font text-lg  lg:text-3xl">
+              Costs of setting up are not high
+            </div>
+          </li>
+          <li class="flex space-x-4">
+            <div>
+              <img src="/assets/1x/Asset 26.png" alt="" class="w-6" />
+            </div>
+            <div class="text-font text-lg  lg:text-3xl">
+              Scalable form of Business Organization
+            </div>
+          </li>
+          <li class="flex space-x-4">
+            <div>
+              <img src="/assets/1x/Asset 26.png" alt="" class="w-6" />
+            </div>
+            <div class="text-font text-lg  lg:text-3xl">
+              Payment Gateways and few others require
+the business to be a companyCosts of setting up are not high
+            </div>
+          </li>
+          <li class="flex space-x-4">
+            <div>
+              <img src="/assets/1x/Asset 26.png" alt="" class="w-6" />
+            </div>
+            <div class="text-font text-lg  lg:text-3xl">
+              Investors are willing to fund on companies
+because shares are relatively easy to
+transfer & trade
+            </div>
+          </li>
+          <li class="flex space-x-4">
+            <div>
+              <img src="/assets/1x/Asset 26.png" alt="" class="w-6" />
+            </div>
+            <div class="text-font text-lg  lg:text-3xl">
+              People may come and people may go,
+but the company goes on forever.
+it outlasts the founders!
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+
+    </div>
+
+
+    <footer class="px-6 pb-44 pb:pb-0 lg:py-24 footer-bg">
+      <div class="grid_footer md:flex justify-evenly">
+      <div class="mt-12 pt-10 lg:pt-0 lg:mt-16">
+        <img src="/assets/1x/Asset 16.png" alt="" class="w-40">
+      </div>
+  
+      <!--ROC matters section-->
+      <div>
+        <h1 class="text-3xl pt-10 lg:pt-0 lg:text-3xl tracking-medium">ROC matters</h1>
+        <div class="mt-2 lg:mt-4">
+          <h2 class="text-lg font-bold tracking-normal">Registration services</h2>
+            <h3 class="text-xs">Private limited company</h3>
+            <h3 class="text-xs">Limited liability partnership</h3>
+            <h3 class="font-semibold text-xs">One person company</h3>
+            <h3 class="text-xs">Section 8 company</h3>
+            <h3 class="text-xs">GST registration</h3>
+            <div class="mt-2">
+              <h2 class="  lg:text-lg font-bold tracking-normal ">Compliance services</h2>
+              <div class="text-xs pt-2 lg:pt-0">
+                <h4>GST filing</h4>
+                <h4>Annual Compliance Of Pvt Ltd Companies</h4>
+                <h4>Annual Compliance Of LLP</h4>
+              </div>
+            </div>
+        </div>
+      
+      </div>
+  
+  
+      <!--About Us Sections-->
+      <div class="about_us">
+      <h1 class="mt-5 lg:mt-0 text-3xl tracking-medium">About us</h1>
+      <p class="mg:mt-4 w-52 text-sm leading-7 font-lighter">What Makes Us Diffrent MORE THAN 2 DECADES OF EXPERIENCE ON-TIME ALL COMPLIANCES REASONABLE.</p>
+    </div>
+  
+      <!--Contact Us Section-->
+  
+     <div class="contact_us">
+    <h1 class="mt-5 lg:mt-0 text-3xl tracking-medium font-normal">Contact us</h1>
+    <div class="phone_no flex gap-3 items-center mt-4">
+      <img src="/assets/1x/Asset 17.png" alt="">
+      <p>72006 97372</p>
+  </div>
+  
+  <div class="Email flex gap-3 items-center mt-6">
+    <img src="/assets/1x/Asset 18.png" alt="">
+    <p>rocmatters23@gmail.com</p>
+  </div>
+  
+  <div class="address w-2/3 mt-4">
+      New No.16, Agasthiya nagar, hallis road,kipauk, chennai - 600010. 
+  </div>
+  
+  <div class="mt-7">
+    <img src="/assets/1x/Asset 19.png" class="w-24" alt="">
+  </div>
+  
+  
+    </div>
+  </footer> 
+  </body>
+</html>

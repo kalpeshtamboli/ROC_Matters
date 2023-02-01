@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Raleway-Bold;
+  src: url("./assets/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("./assets/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url("./assets/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("./assets/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins-MediumItalic;
+  src: url("/assets/Poppins-MediumItalic.ttf");
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("/assets/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Raleway-Regular;
+  src: url("/assets/Raleway-Regular.ttf");
+}
+body{
+  font-family: Poppins-Regular;
+}
+.LPP_info > h1 {
+  color: #29285e;
+}
+.h1 {
+  color: #29285e;
+}
+.h11 {
+  color: #29285e;
+  font-weight: bold;
+}
+
+ .h1 {
+  color: #29285e;
+}
+
+nav {
+  background-color: #29285e;
+}
+/* for mobile navigation bar */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  background-color: #f9f9f9;
+ 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.sub-dropdown {
+  position: relative;
+}
+
+.sub-dropdown-content {
+  display: none;
+  position: absolute;
+
+  left: 100%;
+  top: 0;
+ padding: 0.2rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.LLP_steps > h1,
+section > h1,
+.steps > h1,
+.benefits > h1 {
+  color: #29285e;
+}
+footer {
+  background-color: #29285e;
+  color: white;
+}
+
+.image_square {
+  background-color: orange;
+}
+.image {
+  z-index: 1;
+  left: 14%;
+}
